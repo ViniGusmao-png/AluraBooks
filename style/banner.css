@@ -1,0 +1,66 @@
+.banner {
+    background: var(--azul-degrade);
+    text-align: center;
+    padding: 2em 2em;
+}
+
+.banner_titulo {
+    font-weight: 700;
+    font-size: 27px;
+    color: var(--branco);
+}
+
+.banner_texto {
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.5em;
+}
+
+.banner_pesquisa {
+    color: var(--branco);
+    border: 2px solid var(--branco);
+    border-radius: 27px;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 1em;
+    width: 100%;
+    color: var(--branco);
+
+}
+
+.banner_pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background: url('../assets/Pesquisa.svg');
+    background-repeat: no-repeat;
+    background-position: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner_titulo{
+        font-size: 36px;
+    }
+    .banner_pesquisa{
+        width: 50%;
+    }
+    .banner_pesquisa::placeholder{
+        background-position: 7em;
+    }
+}
+@media screen and (min-width: 1728px ) {
+    .banner_pesquisa{
+        width: 35%;
+    }
+    .banner_pesquisa::placeholder{
+        background-position: 11em;
+    }
+    .banner{
+        padding: 5em;
+    }
+    
+}
